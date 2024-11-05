@@ -52,7 +52,7 @@ h1.title {
   background: #bbada0;
   padding: 10px 30px;
   font-size: 18px;
-  height: 22px;
+  height: 25px;
   width: 45px;
   line-height: 40px;
   font-weight: bold;
@@ -111,6 +111,85 @@ hr {
   border-bottom: 1px solid #d8d4d0;
   margin-top: 20px;
   margin-bottom: 30px; }
+
+.howtoplay {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding: 20px 50px;
+  background-color: #e9ece2;
+  text-align: center;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-top {
+  margin-bottom: 5px;
+}
+
+.footer-logo img {
+  height: 50px;
+  border-radius: 10px;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-copir, .footer-links {
+  display: inline;
+}
+
+.footer-copir {
+  font-size: 14px;
+  color: #6c757d;
+  margin-right: 10px; 
+  margin-top: 3px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex; 
+  gap: 10px;
+}
+
+.footer-links li {
+  display: inline;
+  position: relative;
+}
+
+.footer-links li + li::before {
+  content: "|";
+  margin-right: 10px;
+  color: #6c757d;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+
+@media (min-width: 768px) {
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+  }
+}
+
 
 .container {
   width: 500px;
@@ -486,7 +565,7 @@ hr {
   padding: 0 20px;
   text-decoration: none;
   color: #f9f6f2;
-  height: 41px;
+  height: 45px;
   line-height: 42px;
   display: block;
   text-align: center;
